@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<!-- Hey, welcome to the source code! -->
+<!-- New to open source and want to submit your first pull request?
+     Feel free to make a change, anything reasonable. Honestly! I got you.
+     You can also email me at jdcastro.business@gmail.com and I'd love to
+     guide you in the right direction.
+     You're the best!
+-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Salary Calculator</title>
+    <meta
+      name="description"
+      content="A salary calculator to figure out what you make based on certain metrics."
+    />
+    <meta
+      name="keywords"
+      content="HTML,CSS,JavaScript,Open
+      Source,Calculator,Salary"
+    />
+    <meta name="author" content="Jacob D. Castro" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheets" href="./index.css" />
+    <script src="./js/index.js"></script>
+  </head>
+  <body>
+    <h1>Salary Calculator</h1>
+
+    <div class="calculator">
+      <div class="salary-input">
+        <h2>Enter how much you make.</h2>
+        <div class="type-btn-section">
+          <button class="type-btn" onclick="setInputType('yr')">/yr</button>
+          <button class="type-btn" onclick="setInputType('mo')">/mo</button>
+          <button class="type-btn" onclick="setInputType('wk')">/wk</button>
+          <button class="type-btn" onclick="setInputType('hr')">/hr</button>
+        </div>
+        <input class="input" type="text" />
+      </div>
+
+      <div class="salary-output">
+        <div class="type-btn-section">
+          <button class="type-btn" onclick="setOutputType('yr')">/yr</button>
+          <button class="type-btn" onclick="setOutputType('mo')">/mo</button>
+          <button class="type-btn" onclick="setOutputType('wk')">/wk</button>
+          <button class="type-btn" onclick="setOutputType('hr')">/hr</button>
+        </div>
+        <h3 id="answer"></h3>
+      </div>
+    </div>
+  </body>
+</html>
